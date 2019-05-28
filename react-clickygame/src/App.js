@@ -29,10 +29,20 @@ class App extends Component {
       if (this.state.clickedAvengers.includes(id)) {
         alert("This Avenger has been clicked!  You must restart!");
         this.setState({ score: 0 });
-        this.setState({ clicked: [] });
+        this.setState({ clickedAvengers: [] });
       } else {
 
-        this.setState({ clicked: [...this.state.clicked, id] });
+        this.setState({ clickedAvengers: [...this.state.clickedAvengers, id] });
+
+        const newScore = this.state.score + 1;
+        this.setState({
+          score: newScore
+        });
+
+        if (newScore > this.state.highScore) {
+          this.setState({ highScore: newScore });
+        }
+
 
 
         removeFriend = id => {
