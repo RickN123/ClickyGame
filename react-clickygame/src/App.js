@@ -16,45 +16,51 @@ function shuffle(array) {
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
-  state = {
-    friends
+  constructor(props) {
+    this.state = {
+      friends
     score: 0,
-    highScore: 0,
-    clickedAvengers: []
-  };
+      highScore: 0,
+      clickedAvengers: []
+    };
 
-  clickedFriend = id => {
+    clickedFriend = id => {
 
-    let clickedAvengers = this.state.clickedAvengers;
-    let score = this.state.score;
-    let highScore = this.state.highScore;
-  }
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
-  };
+      if (this.state.clickedAvengers.includes(id)) {
+        alert("This Avenger has been clicked!  You must restart!");
+        this.setState({ score: 0 });
+        this.setState({ clicked: [] });
+      } else {
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
-  render() {
-    return (
-      <Wrapper>
-        <Title>Avengers Friends!</Title>
-        {this.state.friends.map(friend => (
-          <FriendCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
-          />
-        ))}
-      </Wrapper>
-    );
-  }
-}
+        this.setState({ clicked: [...this.state.clicked, id] });
 
-export default App;
+
+        removeFriend = id => {
+          // Filter this.state.friends for friends with an id not equal to the id being removed
+          const friends = this.state.friends.filter(friend => friend.id !== id);
+          // Set this.state.friends equal to the new friends array
+          this.setState({ friends });
+        };
+
+        // Map over this.state.friends and render a FriendCard component for each friend object
+        render() {
+          return (
+            <Wrapper>
+              <Title>Avengers Friends!</Title>
+              {this.state.friends.map(friend => (
+                <FriendCard
+                  removeFriend={this.removeFriend}
+                  id={friend.id}
+                  key={friend.id}
+                  name={friend.name}
+                  image={friend.image}
+                  occupation={friend.occupation}
+                  location={friend.location}
+                />
+              ))}
+            </Wrapper>
+          );
+        }
+      }
+
+      export default App;
