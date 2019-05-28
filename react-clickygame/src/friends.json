@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Captain America",
+        "image": "https://vignette.wikia.nocookie.net/x-men/images/d/dc/Captain-america.jpg/revision/latest?cb=20131228163039",
+        "occupation": "Fry Cook",
+        "location": "A Pineapple Under the Sea"
+    },
+    {
+        "id": 2,
+        "name": "Iron Man",
+        "image": "https://static1.squarespace.com/static/583c906ebe659429d1106265/t/5935941859cc687293cd3f6b/1496683572683/?format=750w",
+        "occupation": "Restaurant Owner",
+        "location": "A Giant Anchor"
+    },
+    {
+        "id": 3,
+        "name": "Black Panther",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/414eTiiGXUL.jpg",
+        "occupation": "Cashier",
+        "location": "An Easter Island Head"
+    },
+    {
+        "id": 4,
+        "name": "Thor",
+        "image": "https://imgc.allpostersimages.com/img/print/u-g-F5S14J0.jpg?w=550&h=550&p=0",
+        "occupation": "Boy Genius",
+        "location": "A Secret Laboratory"
+    },
+    {
+        "id": 5,
+        "name": "Hulk",
+        "image": "https://fermi.gsfc.nasa.gov/science/constellations/pages/inc/img/hulk/Hulk_Artwork.jpg",
+        "occupation": "A Cowardly Dog",
+        "location": "Nowhere, Kansas"
+    },
+    {
+        "id": 6,
+        "name": "Spiderman",
+        "image": "https://www.nicepng.com/png/detail/197-1974632_spiderman-comic-png-clipart-spiderman-transparent.png",
+        "occupation": "Student",
+        "location": "Bluffington"
+    },
+    {
+        "id": 7,
+        "name": "Hawkeye",
+        "image": "https://i.pinimg.com/originals/6e/a1/1f/6ea11ffe16f86117d0f7733c74bf1b0a.png",
+        "occupation": "Looney Toon",
+        "location": "A Rabbit Burrow"
+    },
+    {
+        "id": 8,
+        "name": "Doctor Strange",
+        "image": "http://i0.wp.com/facomics.com/wp-content/uploads/2015/05/Dr_Strange_by_Steve_Ditko.jpg",
+        "occupation": "Ladies Man",
+        "location": "Aron City"
+    },
+    {
+        "id": 9,
+        "name": "Captain Marvel",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWdgdd2lt1_-jpKr-yoLqywdp7aIfllCwYhkua-KF1vA84JWh",
+        "occupation": "Adventurer",
+        "location": "California"
+    },
+    {
+        "id": 10,
+        "name": "Falcon",
+        "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/86/Falcon_Vol_2_7_Textless.jpg/revision/latest?cb=20180124013445",
+        "occupation": "Cashier",
+        "location": "O-Town, California"
+    },
+    {
+        "id": 11,
+        "name": "Black Widow",
+        "image": "https://www.nicepng.com/png/detail/69-694619_black-widow-aa-render-black-widow-comic-png.png",
+        "occupation": "Superhero",
+        "location": "Earth"
+    },
+    {
+        "id": 12,
+        "name": "Ant-Man",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBVJKGe-Nnkx0u8WgaIddEGouXzvFlG2vt0TYW4HInPNmGFKa6",
+        "occupation": "Ahhhh! A Real Monster!",
+        "location": "Under a City Dump"
+    }
+]
