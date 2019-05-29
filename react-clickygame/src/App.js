@@ -61,8 +61,8 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title> New Score: {this.state.score}</Title>
-        <Title>Avengers Friends! - High Score: {this.state.highScore}</Title>
+        <Title> Avengers Match Game!  - New Score: {this.state.score}</Title>
+        <Title>Click on Each Avenger Once to Win! - High Score: {this.state.highScore}</Title>
         {this.state.friends.map(friend => (
           <FriendCard
             id={friend.id}

@@ -3,8 +3,11 @@
   text-align: center;
   font-size: 3rem;
   text-decoration: underline;
-  color: rgb(22, 23, 24);
+  color: rgb(237, 241, 245);
+  text-shadow: black;
   margin-bottom: 50px;
   font-style: oblique;
-  font-family: Impact, 'Arial Narrow Bold', sans-serif
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  text-decoration-color: rgb(209, 12, 12)
+  
 }
