@@ -7,6 +7,7 @@ After clicking on each character, the cards will be shuffled.  You will need to 
 
 ## How to Start Playing
 Go to the link provided to start playing Avengers Match Game!
+https://rickn123.github.io/ClickyGame/
 
 ## Availability
 Avengers Memory Game is now fully released internationally!
