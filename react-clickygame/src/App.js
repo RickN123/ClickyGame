@@ -28,10 +28,10 @@ class App extends Component {
     };
 
   }
-  
+
   clickedFriend = id => {
     shuffle(friends);
-    
+
     if (this.state.clickedAvengers.includes(id)) {
       alert("This Avenger has been clicked!  You must restart!");
       this.setState({ score: 0 });
@@ -61,7 +61,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>New Score: {this.state.score}</Title>
+        <Title> New Score: {this.state.score}</Title>
         <Title>Avengers Friends! - High Score: {this.state.highScore}</Title>
         {this.state.friends.map(friend => (
           <FriendCard
