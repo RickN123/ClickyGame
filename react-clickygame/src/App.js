@@ -53,24 +53,20 @@ class App extends Component {
       }
     }
   }
-  
-
-
-
 
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
-        <Title>Avengers Friends!</Title>
+        <Title>New Score: {this.state.score}</Title>
+        <Title>Avengers Friends! - High Score: {this.state.highScore}</Title>
         {this.state.friends.map(friend => (
           <FriendCard
-
             id={friend.id}
             key={friend.id}
             name={friend.name}
             image={friend.image}
-
+            onClick={this.clickedFriend}
           />
         ))}
       </Wrapper>
