@@ -18,6 +18,8 @@ class App extends Component {
   // Setting this.state.friends to the friends json array
   constructor(props) {
     super(props);
+
+    shuffle(friends);
     this.state = {
       friends,
       score: 0,
@@ -28,7 +30,8 @@ class App extends Component {
   }
   
   clickedFriend = id => {
-
+    shuffle(friends);
+    
     if (this.state.clickedAvengers.includes(id)) {
       alert("This Avenger has been clicked!  You must restart!");
       this.setState({ score: 0 });
@@ -66,7 +69,7 @@ class App extends Component {
             key={friend.id}
             name={friend.name}
             image={friend.image}
-            onClick={this.clickedFriend}
+            onClick={() => this.clickedFriend(friend.id)}
           />
         ))}
       </Wrapper>
